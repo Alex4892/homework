@@ -10,11 +10,10 @@
 
 </head>
 
-<body>
+{% comment %} <body>
     <div class="mt-md-5">
         <div class="pl-sm-5">
             <div class="pr-sm-5">
-                <h3 align="center">Welcome to PythonGuides</h3>
                 <br>
                 <hr>
                 <form method="POST">
@@ -22,11 +21,11 @@
                     <table>
                         {{ form.as_table }}
                     </table>
-                    <button type="submit" class="btn btn-success">Print Table</button>
+                    <button type="submit" class="btn btn-success">Нажать</button>
                 </form>
                 <br>
                 <hr>
-                <p>Number to print its multiplication table:{{Number}}</p>
+                <p>Число, которое нужно вывести в таблице умножения:{{Number}}</p>
                 <br>
                 <hr>
                 {% for x in range %}
@@ -45,7 +44,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-</body>
+</body> {% endcomment %}
 
 </head>
 <body>

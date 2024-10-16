@@ -1,6 +1,6 @@
 from django.shortcuts import render
 
-from .forms import TableForm
+# from .forms import TableForm
 
 import datetime
 
@@ -16,15 +16,15 @@ def view_index(request):
     } 
     return render(request, "index.html", context=context)
 
-def html_button(request):
-    if request.method == "POST":  
-        form = TableForm(request.POST)  
-        if form.is_valid():  
-            num = form.cleaned_data['num']
-            return render(request, 'index.html', {'Number':num, 'range': range(1,11)})
-    else:  
-        form = TableForm()  
-    return render(request, 'index.html', {'form':form})
+# def html_button(request):
+#     if request.method == "POST":  
+#         form = TableForm(request.POST)  
+#         if form.is_valid():  
+#             num = form.cleaned_data['num']
+#             return render(request, 'index.html', {'Number':num, 'range': range(1,11)})
+#     else:  
+#         form = TableForm()  
+#     return render(request, 'index.html', {'form':form})
 
 
 # def view_calculator(request):
